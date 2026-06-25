@@ -40,7 +40,7 @@ invalid_kyc=df[~df["kyc_status"].isin(valid_kyc)]
 print("\nInvalid KYC records:")
 print(invalid_kyc)
 df.to_csv(
-    "data/raw/investor_transactions_cleaned.csv",
+    "data/processed/investor_transactions_cleaned.csv",
     index=False
 )
 print("\nCleaning completed successfully!")

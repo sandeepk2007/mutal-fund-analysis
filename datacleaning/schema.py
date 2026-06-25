@@ -43,6 +43,6 @@ df = df[
 ]
 
 df.to_csv(
-    "data/raw/scheme_performance_cleaned.csv",
+    "data/processed/scheme_performance_cleaned.csv",
     index=False
 )

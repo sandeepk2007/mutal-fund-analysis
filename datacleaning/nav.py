@@ -22,7 +22,7 @@ df['nav'] = df.groupby('amfi_code')['nav'].ffill()
 df = df[df['nav'] > 0]
 
 # Save cleaned file
-df.to_csv("data/raw/nav_history_cleaned.csv", index=False)
+df.to_csv("data/processed/nav_history_cleaned.csv", index=False)
 
 print("Cleaning completed!")
 print(df.head())
